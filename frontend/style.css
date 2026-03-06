@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: #d1d5db;
+  border-radius: 1rem;
+  border: 1px solid #475569;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.9),
+    0 0 0 1px rgba(15, 23, 42, 0.9);
+  padding: 1rem 1.6rem 1.5rem;
+  max-width: 360px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #18181b;
+}
+
+.card-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: #bfdbfe;
+  color: #404040;
+  border: 1px solid #1e3a8a;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #404040;
+  margin-bottom: 0.85rem;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+}
+
+
+button {
+  font: inherit;
+}
+
+.card-button-edit,
+.card-button-delete {
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #404040;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 120ms ease,
+    box-shadow 160ms ease;
+}
+
+.card-button-edit {
+  background:#38bdf8;
+  color: #404040;
+}
+
+.card-button-edit:hover {
+  transform: translateY(-1px);
+  background-color: #4dcaff;
+}
+
+.card-button-edit:active {
+  transform: translateY(0);
+  background-color: #26a2d9;
+}
+
+.card-button-delete {
+  background: #fecdd3;
+  color: red;
+  border-color: #fb7185;
+}
+
+.card-button-delete:hover {
+  background: #f55b5b;
+  transform: translateY(-1px);
+}
+
+.card-button-delete:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(239, 68, 68, 0.3);
+}
+
